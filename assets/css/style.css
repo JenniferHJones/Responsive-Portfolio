@@ -101,7 +101,7 @@ hr {
     float: left;
     margin-top: 10px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 300px;
     height: auto;
 }
@@ -191,78 +191,114 @@ input[type=text], select {
       background-image: url(../images/rock.jpg)
   }
 
-  @media only screen and (max-width: 640px) {
-    /* I couldn't figure out how to get rid of the left margin! */
-    .html {
-        padding: 0;
-        margin: 0;
-        max-width: 640px;
-    }
-
-    header .name {
-        width: 640px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    header .topnav {
-        clear: both;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-
-    }
-
-    /* I couldn't figure out how to get this element stacked under header name */
-
-  }
-  
-  @media only screen and (max-width: 768px) {
-        
-    header .topnav {
-        width: 735px;
-    }
-
-    .container {
-        width: 100%;
-    }
-  }
-  
-  @media only screen and (max-width: 980px) {
-    header {
-        width: 980px;
-    } 
-    
+  @media only screen and (min-width: 980px) and (max-width: 1000px) {
+      
     header .name {
         margin-left: 5%;
-        display: block;
     }
     
     header .topnav {
         margin-right: 5%;
-        display: block;
     }
     
     .container {
         margin-left: 5%;
-        max-width: 600px;
+        width: 60%;
     }
 
     .containerPortfolio {
         margin-left: 5%;
-        max-width: 600px;
-        height: 725px;
+        width: 60%;
     }
 
     .bio-image {
-        width: 200px;
+        width: 40%;
         margin-top: 0;
         margin-bottom: 0;
     }
 
     .pics {
-        width: 240px;
+        width: 225px;
         height: 170px;
         margin: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+    header .name {
+        margin-left: 2%;
+    }
+    
+    header .topnav {
+        margin-right: 23%;
+    }
+
+    .container {
+        margin-left: 2%;
+        width: 95%;
+    }
+    .containerPortfolio {
+        margin-left: 2%;
+        width: 95%;
+    }
+
+    .bio-image {
+        width: 50%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .pics {
+        width: 290px;
+        height: 170px;
+        margin: 15px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    header .name {
+        margin: 0;
+        width: 640px;
+    }
+    
+    header .topnav {
+        float: none;
+        width: 45%;
+    }
+
+    .container {
+        width: 90%;
+    }
+    .containerPortfolio {
+        width: 90%;
+    }
+
+    .bio-image {
+        width: 100%;
+    }
+
+    .pics {
+        width: 100%;
+        margin: 0;
+    }
+
+    #hangman {
+        margin-top: 2%;
+    }
+
+    #rpg {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #rutgers {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #rock {
+        margin-bottom: 15%;
     }
 }

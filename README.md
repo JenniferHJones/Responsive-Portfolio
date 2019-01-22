@@ -1,3 +1,3 @@
 # Responsive-Portfolio
 
-This was a hard assignment
+This was a hard assignment!
